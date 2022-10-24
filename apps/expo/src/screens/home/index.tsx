@@ -9,6 +9,7 @@ import {
 import { FlashList } from '@shopify/flash-list';
 import type { inferProcedureOutput } from '@trpc/server';
 import type { AppRouter } from '@acme/api';
+import { StatusBar } from 'expo-status-bar';
 import { trpc } from '../../utils/trpc';
 
 const PostCard: React.FC<{
@@ -98,6 +99,7 @@ export default function HomeScreen() {
 
 				<CreateUser />
 			</View>
+			<StatusBar />
 		</SafeAreaView>
 	);
 }
